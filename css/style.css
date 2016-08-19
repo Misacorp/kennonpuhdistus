@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800,900');
+
+
+body {
+  font-size: 1rem;
+  color: #494949;
+}
+
+a {
+  color: inherit !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.35rem;
+}
+
+.collapsible {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collapsible-body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.collapsible-body p {
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.parallax-image {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: bottom;
+}
+
+.parallax-header {
+  height: 70vh;
+}
+
+.parallax-text {
+  line-height: 70vh;
+  font-size: 220%;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-right {
+  margin-left: 20%;
+}
+
+.askeleet {
+  height: auto;
+}
+
+.subsection-title {
+  line-height: 5rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+} 
+
+.subsection-content {
+  margin-top: -50px;
+}
+
+.parallax-subsection-title {
+  line-height: 5rem;
+  font-size: 220%;
+  color: white;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 125%;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.light {
+  font-size: 1.3rem;
+}
+
+.semibold {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.cursive {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chip {
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.summary {
+  padding-bottom: 0;
+}
+
+.time {
+  font-weight: 600;
+  margin-right: 2rem;
+  font-size: 0.85rem;
+}
+
+.timetable {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.list-container {
+  padding-bottom: 1rem;
+}
+
+.repeating-image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url("../img/brick-texture.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
+  width: 2048px;
+  height: 100%;
+}
+
+.semitransparent {
+  background-color: rgba(255,255,255,0.85)
+}
+
+.parallax-break {
+  height: 575px;
+}
+
+.break-text {
+  line-height: 575px;
+  font-size: 1.8rem;
+}
+
+.fancy {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+}
+
+.click-here-container {
+  position: relative;
+  z-index: 9;
+}
+
+.click-here {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 1.9rem;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  top: 17px;
+  right: -5%;
+
+}
+
+.click-here-text {
+  position: absolute;
+  top: 33px;
+  right: -72%;
+}
+
+.padded-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.padded-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.padded-bottom {
+  padding-bottom: 1.5rem;
+}
+
+.align-right-on-medium-and-up {
+  text-align: right;
+}
+
+.medium-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.contact-card {
+  padding: 5px;
+  padding-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact-list-header {
+  height: 50px;
+  line-height: 2.1rem !important;
+  font-size: 1.2rem;
+}
+
+.contact-list-image {
+  width: 100%;
+  max-width: 35px;
+  height: auto;
+  margin-left: -5px;
+  margin-top: -4px;
+  margin-right: 13px;
+}
+
+.avatar p {
+  line-height: 1.6rem;
+}
+
+.not-ready {
+  position: absolute;
+  top: 17rem;
+  left: 10%;
+  right: 10%;
+  background-color: rgba(0,0,0,0.8);
+  padding: 10px;
+  border: solid 4px rgba(255,255,255,0.8);
+}
+
+.image-background {
+  background: url(../img/bg-04.jpg) center top no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  overflow:hidden;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1100px) and (min-width: 601px) {
+  .parallax-break {
+    height: 300px;
+  }
+
+  .break-text {
+    line-height: 300px;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) and (min-width: 601px) {
+  .parallax-header {
+    height: 300px;
+  }
+
+  .parallax-text {
+    line-height: 300px;
+  }
+
+  h5 {
+    font-size: 1.65rem;
+  }
+
+  .fancy {
+    font-size: 3rem;
+  }
+
+  .not-ready {
+    top: 14rem;
+    border: solid 3px rgba(255,255,255,0.8);
+  }
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 601px) and (max-width: 675px) {
+  .contact-list i {
+    display: none;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .parallax-header {
+    height: 200px;
+  }
+
+  .parallax-text {
+    line-height: 200px;
+  }
+  
+  .parallax-break {
+    height: 125px;
+  }
+
+  .break-text {
+    line-height: 125px;
+    display: none;
+  }
+
+  .fancy {
+    font-size: 2.4rem;
+  }
+
+  .align-right-on-medium-and-up {
+    text-align: left;
+  }
+
+  .not-ready {
+    top: 10rem;
+    border: solid 2px rgba(255,255,255,0.8);
+  }
+
+  .subsection-title {
+    line-height: 1.2em;
+  }
+
+}
+
+
+
+
+
+@media screen and (max-width: 315px) {
+  .contact-list i {
+    display: none;
+  }
+}
