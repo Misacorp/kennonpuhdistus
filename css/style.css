@@ -45,6 +45,10 @@ h6 {
   font-size: 1.4em;
 }
 
+.parallax {
+  background-attachment: fixed;
+}
+
 .parallax-image {
   max-width: 100%;
   margin-left: auto;
@@ -52,12 +56,15 @@ h6 {
   vertical-align: bottom;
 }
 
+/*
 .parallax-header {
-  height: 70vh;
+  height: 70vh ;
 }
+*/
 
 .parallax-text {
-  line-height: 70vh;
+  /*line-height: 70vh;*/
+  line-height: 500px;
   font-size: 220%;
 }
 
@@ -166,7 +173,7 @@ h6 {
   position: absolute;
   left: 0px;
   top: 0px;
-  background-image: url("../img/brick-texture.jpg");
+  background-image: url("/img/brick-texture.jpg");
   background-repeat: repeat;
   background-position: 0 0;
   width: 2048px;
@@ -290,7 +297,7 @@ h6 {
 }
 
 .image-background {
-  background: url(../img/bg-04.jpg) center top no-repeat;
+  background: url('/img/bg-04.jpg') center top no-repeat;
   background-size: cover;
   width: 100%;
   background-attachment: fixed;
