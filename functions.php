@@ -10,4 +10,29 @@ function cleansensor_script_enqueue() {
 
 add_action( 'wp_enqueue_scripts', 'cleansensor_script_enqueue');
 
+
+
+
+/*    Run shortcodes in textarea fields     
+function my_acf_format_value( $value, $post_id, $field ) {
+  
+  // run do_shortcode on all textarea values
+  $value = do_shortcode($value);
+  
+  
+  // return
+  return $value;
+}
+
+add_filter('acf/format_value/type=textarea', 'my_acf_format_value', 116);
+*/
+
+
+
+/*    Allow Advanced Custom Fields text areas to be smaller in editor   */ 
+add_filter('admin_head','textarea_temp_fix');
+function textarea_temp_fix() {
+  echo '<style type="text/css">.acf_postbox .field textarea {min-height:0 !important;}</style>';
+}
+
 ?>

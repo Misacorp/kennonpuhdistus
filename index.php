@@ -6,7 +6,7 @@
 
   <div class="parallax-container parallax-header">
     <div class="parallax"><img class="parallax-image" src="<?php get_template_directory_uri();?>/wp-content/themes/cleansensor/img/bg-05.jpg"/></div>
-    <div class="col s12 center"><span class="parallax-text white-text fancy">Kennonpuhdistus.fi</span></div>
+    <div class="col s12 center"><span class="parallax-text white-text fancy"><?php the_field("otsikko", 116) ?></span></div>
   </div>
 
 
@@ -21,20 +21,20 @@
       <div class="col s12 m4">
         <div class="icon-block">
           <h2 class=" blue-grey-text text-lighten-2">
-            <i class="material-icons medium">grain</i>
+            <i class="material-icons medium"><?php the_field("intro_a_kuva", 116) ?></i>
           </h2>
-          <h5>Mitä?</h5>
-          <p class="light flow-text">Digitaalisissa järjestelmäkameroissa voi kuvasensorille, eli kennolle, päästä pölyä ja likaa.</p>
+          <h5><?php the_field("intro_a_otsikko", 116) ?></h5>
+          <p class="light flow-text"><?php the_field("intro_a_teksti", 116) ?></p>
         </div>
       </div>
     
       <div class="col s12 m4">
         <div class="icon-block">
           <h2 class=" blue-grey-text text-lighten-2">
-            <i class="material-icons medium">camera_enhance</i>
+            <i class="material-icons medium"><?php the_field("intro_b_kuva", 116) ?></i>
           </h2>
-          <h5>Miten ilmenee?</h5>
-          <p class="light flow-text">Kennolla oleva pöly huonontaa kuvanlaatua ja pahimmillaan se näkyy selkeinä tummina pisteinä tai viivoina kuvissa.</p>
+          <h5><?php the_field("intro_b_otsikko", 116) ?></h5>
+          <p class="light flow-text"><?php the_field("intro_b_teksti", 116) ?></p>
         </div>
       </div>
     
@@ -42,10 +42,10 @@
       <div class="col s12 m4">
         <div class="icon-block">
           <h2 class=" blue-grey-text text-lighten-2">
-            <i class="material-icons medium">blur_off</i>
+            <i class="material-icons medium"><?php the_field("intro_c_kuva", 116) ?></i>
           </h2>
-          <h5>Miten etenen?</h5>
-          <p class="light  flow-text">Selaa sivustoa alaspäin, kerromme miten voit varmistaa kennosi pölyisyyden ja miten toimitat sen puhdistukseen.</p>
+          <h5><?php the_field("intro_c_otsikko", 116) ?></h5>
+          <p class="light  flow-text"><?php the_field("intro_c_teksti", 116) ?></p>
         </div>
       </div>
 
@@ -71,7 +71,7 @@
     <div class="container askeleet" id="askeleet">
 
       <div class="row">
-        <div class="col s12 center subsection-title">Askeleet puhtaaseen kennoon.</div>
+        <div class="col s12 center subsection-title"><?php the_field("2_otsikko", 116) ?></div>
       </div>
 
       <div class="row">
@@ -87,12 +87,12 @@
 
           <ul class="collapsible" id="askeleetlista" data-collapsible="accordion">
             <li>
-              <div class="collapsible-header"><i class="material-icons">search</i><i class="material-icons right">more_horiz</i><span class="list-header">1. Varmistus</span></div>
+              <div class="collapsible-header"><i class="material-icons"><?php the_field("sisalto_a_kuva", 116) ?></i><i class="material-icons right">more_horiz</i><span class="list-header"><?php the_field("sisalto_a_otsikko", 116) ?></span></div>
 
               <div class="collapsible-body">
                 <div class="row center padded-3">
                   <div class="col s12">
-                    <span class="flow-text">Tarkista onko kuvissasi pölyä.</span>
+                    <span class="flow-text"><?php the_field("sisalto_a_alaotsikko", 116) ?></span>
                   </div>
                 </div>
 
@@ -106,35 +106,25 @@
                   </div>
 
                   <div class="col s12 m8 pull-m4">
-                    <p>
-                      Pölyn näkyminen kuvissa vaihtelee kameran ja objektiivin säätöjen mukaan - pahimmillaan pöly on huomaamatonta tietyillä asetuksilla, kun se toisilla tekee jo kuvista käyttökelvottomia. Sivuston ylimmässä ja kolmanneksi ylimmässä kuvassa on sama kamera ja sama määrä pölyä, mutta alempi kuva on otettu pidemmällä objektiivilla ja isommalla aukolla, jolloin pöly ei näy niin pahasti.
-                    </p>
-
-                    <p>Voit tarkistaa onko kennollasi pölyä ottamalla kuvan tasaisesta valkoisesta seinästä/paperista isoimmalla aukkoarvolla minkä objektiivisi antaa kuvata (f22, f32, f35 tms) Jos kuvasta löytyy harmaita/mustia pisteitä, on kennossasi pölyä.</p>
+                    <?php the_field("sisalto_a_teksti", 116) ?>
                   </div>
                 </div>  <!-- END ROW -->
               </div>
             </li>
 
             <li>
-              <div class="collapsible-header"><i class="material-icons">build</i><i class="material-icons right">more_horiz</i><span class="list-header">2. Huoltoon</span></div>
+              <div class="collapsible-header"><i class="material-icons"><?php the_field("sisalto_b_kuva", 116) ?></i><i class="material-icons right">more_horiz</i><span class="list-header"><?php the_field("sisalto_b_otsikko", 116) ?></span></div>
 
               <div class="collapsible-body">
                 <div class="row center padded-3">
                   <div class="col s12">
-                    <span class="flow-text">Puhdista kevyt lika itse tai anna ammattilaisten hoitaa vaikeammat tahrat.</span>
+                    <span class="flow-text"><?php the_field("sisalto_b_alaotsikko", 116) ?></span>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col s12">
-                    <p>
-                      Kevyimmät pölyt saattavat lähteä kennolta kotikonstein, mutta silloin kannattaa olla varma tekemisestään, sillä normaalit takuut ja vakuutukset eivät kata itse aiheutettuja vahinkoja kennolle. 
-                    </p>
-
-                    <p>
-                      Mikäli haluat toimittaa kamerasi puhdistettavaksi, huoltomiehemme putsaavat kennosi tuhansien kennonpuhdistuksien kokemuksella.
-                    </p>
+                    <?php the_field("sisalto_b_teksti", 116) ?>
                   </div>
                 </div>
 
@@ -146,28 +136,18 @@
             </li>
 
             <li>
-              <div class="collapsible-header"><i class="material-icons">local_shipping</i><span class="list-header">3. Toimitus</span><i class="material-icons right">more_horiz</i></div>
+              <div class="collapsible-header"><i class="material-icons"><?php the_field("sisalto_c_kuva", 116) ?></i><span class="list-header"><?php the_field("sisalto_c_otsikko", 116) ?></span><i class="material-icons right">more_horiz</i></div>
 
               <div class="collapsible-body">
                 <div class="row center padded-3">
                   <div class="col s12">
-                    <span class="flow-text">Lähetä kamerasi meille puhdistettavaksi.</span>
+                    <span class="flow-text"><?php the_field("sisalto_c_alaotsikko", 116) ?></span>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col s12">
-                    <p>
-                      Voit tilata ja maksaa kennonpuhdistuksen helposti suoraan tämän sivun alaosasta. Sivun alaosasta on helppo myös maksaa valmiiksi paluutoimitus postitse lähimpään postin toimipisteeseen.
-                    </p>
-
-                    <p>
-                      Mikäli toimitat paketin meille postitse, tulosta pakettiin mukaan nettikaupan kuitti, pakkaa kamera hyvin ja toimita se osoitteesen Kennonpuhdistus.fi c/o Kameratori.fi, Pyynikintori 8, 33230 Tampere
-                    </p>
-
-                    <p>
-                      Voit myös toimittaa puhdistettavan kameran Kameratorin Tampereen liikkeeseen sen aukioloaikoina.
-                    </p>
+                    <?php the_field("sisalto_c_teksti", 116) ?>
                   </div>
                 </div>
 
@@ -202,17 +182,25 @@
 
     <div class="row">
       <div class="col s12 center subsection-title">
-        Kennonpuhdistuksen tilaus
+        <?php the_field("tilaus_otsikko", 116) ?>
       </div>
     </div>
 
     <div class="row subsection-content">
       <div class="col s12 center">
-        <p class="flow-text">Ota meihin yhteyttä puhdistuksen aloittamiseksi.</p>
+        <p class="flow-text"><?php the_field("tilaus_alaotsikko", 116) ?></p>
       </div>
 
       <div class="col s12 center">
-        Täytä tämä lomake tiedoillasi ja paina Siirry maksamaan, niin kennosi on jo melkein puhdas. Kennonpuhdistuksen hinta on 39€ ja paluupostituksen hinta on 6€.
+        <?php the_field("tilaus_teksti", 116) ?>
+      </div>
+
+      <div class="col s12 center">
+        <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+        <?php the_content(); ?>
+
+        <?php endwhile; ?>
       </div>
     </div>
 
